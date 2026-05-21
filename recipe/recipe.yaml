@@ -1,5 +1,5 @@
 context:
-  version: "4.1.1"
+  version: "4.1.2"
   python_min: "3.10"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyspark_client/pyspark_client-${{ version }}.tar.gz
-  sha256: 23bd428d1f96c7196ae8ba29facca7eb56f66b3c380294385101ec8f1872a44a
+  sha256: 4e5ac863064c3bd6c288da7e3932c72b491cd90e294e5e91aec37e1fa1c870f5
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
+    - setuptools
   run:
     - python >=${{ python_min }}
     - pandas >=2.2.0
@@ -37,8 +38,8 @@ tests:
         - pyspark.sql.connect
       pip_check: true
       python_version:
-      - ${{ python_min }}.*
-      - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://spark.apache.org/
