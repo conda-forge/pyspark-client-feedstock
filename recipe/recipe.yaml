@@ -1,6 +1,5 @@
 context:
   version: "4.2.1"
-  python_min: "3.10"
 
 package:
   name: pyspark-client
@@ -23,7 +22,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pandas >=2.2.0
-    - pyarrow >=15.0.0
+    - pyarrow >=18.0.0
     - grpcio >=1.76.0
     - grpcio-status >=1.76.0
     - googleapis-common-protos >=1.71.0
