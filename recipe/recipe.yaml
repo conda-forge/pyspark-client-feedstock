@@ -1,5 +1,5 @@
 context:
-  version: "4.2.0"
+  version: "4.2.1"
   python_min: "3.10"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyspark_client/pyspark_client-${{ version }}.tar.gz
-  sha256: 4008fe5e537bf0e57e7243d03abfaac089b7c87316bd07024784d8ea726f5d41
+  sha256: f009f71e1fd0f1efa7e252e18d848e612bc25fcda962a25ed67250dae2af90f5
 
 build:
   noarch: python
