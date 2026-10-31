@@ -27,7 +27,7 @@ requirements:
     - grpcio-status >=1.76.0
     - googleapis-common-protos >=1.71.0
     - zstandard >=0.25.0
-    - numpy >=1.21
+    - numpy >=1.23.2
     - pyyaml >=3.11
 
 tests:
