@@ -1,5 +1,5 @@
 context:
-  version: "4.2.1"
+  version: "4.3.0"
 
 package:
   name: pyspark-client
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyspark_client/pyspark_client-${{ version }}.tar.gz
-  sha256: f009f71e1fd0f1efa7e252e18d848e612bc25fcda962a25ed67250dae2af90f5
+  sha256: 7294e24ffbb896a94e3f9a4bab4b022e1f0500b3c57f76eab7b02f6de029769f
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - grpcio-status >=1.76.0
     - googleapis-common-protos >=1.71.0
     - zstandard >=0.25.0
-    - numpy >=1.21
+    - numpy >=1.23.2
     - pyyaml >=3.11
 
 tests:
